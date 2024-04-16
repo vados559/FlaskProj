@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table border="1" align="Center">
+            <tr>
+                <th>Имя</th>
+                <th>Год рождения</th>
+                <th>Город</th>
+            </tr>
+            {% for user in users %}
+                <tr>
+                    <td>{{users[user]['name']}}</td>
+                    <td>{{users[user]['city']}}</td>
+                    <td>{{users[user]['age']}}</td>
+                </tr>
+           {% endfor %}
+        </table>
+    </body>
+</html>
